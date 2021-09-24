@@ -1,6 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+void ler_array(int *vetor, int tamanho){
+    for(int i = 0; i < tamanho; i++){
+        if(i == tamanho-1)
+         printf("%d", vetor[i]);
+        else
+         printf("%d,", vetor[i]);
+    }
+}
+
 int main(){
     
     int *v, n, i;
@@ -13,16 +22,10 @@ int main(){
         printf("Informe o %dº elemento: ", i+1);
         scanf("%d", &v[i]);
     }
+
+    ler_array(v, n);
     
-    for(i = 0; i < n; i++){
-        if(i==n-1)
-         printf("%d", v[i]);
-        else
-         printf("%d,", v[i]);
-    }
-        
-    
-    free(n);
+   // free(n);
         
     return 0;
 }
