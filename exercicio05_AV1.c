@@ -6,7 +6,7 @@ float **alocaMatriz (int linha, int coluna) {
 
 	matriz = (float **) calloc (linha, sizeof(float *)); 
 	if (matriz == NULL) { 
-		printf ("Nao tem memória"); 
+		printf ("Nao tem memÃ³ria"); 
 		return (NULL); 
 	}
 	for (int i = 0; i < linha; i++ ) { 
@@ -38,7 +38,7 @@ void liberarMatriz(int linha, float **matriz) {
 void imprimirMatriz(int linha, int coluna, float **matriz){ 
 	for (int l = 0; l < linha; l++) 
 		for (int c = 0; c < coluna; c++) 
-			printf("\nLinha = %d, e coluna = %d o valor é = %f", l, c, matriz[l][c]); 
+			printf("\nLinha = %d, e coluna = %d o valor Ã© = %f", l, c, matriz[l][c]); 
 }
 
 float **multiplicaMatrizes(int linha, int coluna, float **matriz1, float **matriz2) { 
